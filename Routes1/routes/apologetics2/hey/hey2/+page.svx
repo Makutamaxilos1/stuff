@@ -1,0 +1,23 @@
+---
+title: New Title 2
+---
+
+<script>
+   export const title = "Svelte File";
+  export const tags = ["info", "introduction"];
+  export const links = [
+  "Philosophy"
+];;
+  </script>
+
+
+# About This Project
+
+This is a **Markdown-based** page written in an `.svx` file.
+
+- Learn about the project’s goals.
+- Explore related pages via the links below.
+
+## Why Markdown?
+
+Markdown is simple and allows rapid content creation.

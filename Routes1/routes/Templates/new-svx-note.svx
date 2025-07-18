@@ -1,0 +1,9 @@
+---
+title: "New Page"
+links: []
+tags: []
+---
+
+# New Page
+
+This is a **Markdown-based** page written  in an `.svx` file.
