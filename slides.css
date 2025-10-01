@@ -1,0 +1,241 @@
+/* General slide container */
+@import url('https://fonts.googleapis.com/css2?family=Gentium+Plus:ital,wght@0,400;0,700;1,400;1,700&family=Great+Vibes&family=Kalam:wght@300;400;700&family=Lato:ital,wght@0,100;0,300;0,400;0,700;0,900;1,100;1,300;1,400;1,700;1,900&family=Lexend:wght@100..900&family=Yellowtail&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Noto+Sans:ital,wght@0,100..900;1,100..900&family=Noto+Serif:ital,wght@0,100..900;1,100..900&display=swap');
+
+.reveal {
+    background-color: #1a1a1a;
+    color: aliceblue;
+    font-family: 'Noto Sans', sans-serif;
+}
+
+/* Slide content */
+.reveal .slides {
+    font-family: 'Noto', sans-serif;
+    font-size: 1.4em;
+    line-height: 1.5;
+    color: #ffffff;
+    margin-top: 0;
+}
+
+.reveal .slides section {
+    background-color: #5d3030;
+    padding: 20px;
+
+    /* Override Reveal.js defaults */
+    display: block !important;       /* disables flex centering */
+    text-align: left !important;     /* aligns text left */
+}
+
+
+.reveal .slides h1 {
+    font-size: 2.5em;
+    font-weight: bold;
+    font-family: 'Noto Sans', sans-serif;
+    margin-bottom: 0.5em;
+
+    position: relative;    /* makes ::before align to this h1 */
+    padding-left: 12px;    /* space so text doesn’t overlap line */
+}
+
+.reveal .slides h2 {
+    font-size: 1.8em;
+    font-weight: bold;
+    font-family: 'Noto Sans', sans-serif;
+    margin-bottom: 0.5em;
+
+    position: relative;    /* makes ::before align to this h1 */
+    padding-left: 12px;    /* space so text doesn’t overlap line */
+}
+
+.reveal .slides .hl1 {
+    color: #78ff9e;        /* example: reddish bold */
+
+}
+
+.reveal .slides .hl2 {
+    color: #ffc078;        /* example: reddish bold */
+
+}
+
+.reveal .slides .hl3 {
+    color: #e678ff;        /* example: reddish bold */
+
+}
+
+.reveal .slides .hl4 {
+    color: #ff7878;        /* example: reddish bold */
+
+}
+
+/* Italics */
+.reveal .slides em, .reveal .slides em strong{
+    color: #47BAE2;         /* text color */
+    font-style: italic;    /* ensure italic still applies */
+}
+
+/* Bold */
+.reveal .slides strong {
+    color: #f51524;        /* example: reddish bold */
+    font-weight: 700;      /* keep bold weight */
+}
+
+.reveal .slides blockquote {
+    position: relative;
+    padding: 1em 1.5em;
+    margin: 1.5em 0;
+
+    color: #ddd;
+    border: none;
+
+    /* Dotted background pattern */
+    background-image: radial-gradient(rgba(255, 255, 255, 0.128) 1px, transparent 1px);
+    background-size: 7px 7px;   /* dot spacing */
+    background-position: 0 0;
+
+    border-radius: 6px;           /* soften edges */
+}
+
+.reveal .slides blockquote::before {
+    content: "";
+    position: absolute;
+    left: 0;
+    top: 0.4em;
+    bottom: 0.4em;
+    width: 4px;              /* thickness of the line */
+    border-radius: 2px;
+    background-color: #47BAE2;   /* same marker color as h1/h2 */
+}
+
+.reveal .slides img {
+    display: block !important;
+    max-width: 100%;
+    height: auto;
+}
+
+.theme-dark .reveal .slides h1 {
+    color: #9a3b3b;
+}
+
+.theme-light .reveal .slides h1 {
+    color: #469e2e;
+}
+
+.reveal .slides h1::before {
+    content: "";
+    position: absolute;
+    left: 0;               /* stick to the left edge of the h1 */
+    top: 0.7em;                /* start at the top of the h1 */
+    bottom: 0.4em;             /* stretch to the bottom of the h1 */
+    width: 4px;            /* thickness of the line */
+    border-radius: 2px;
+    background-color: #F52D15;
+}
+
+.reveal .slides h2::before {
+    content: "";
+    position: absolute;
+    left: 0;               /* stick to the left edge of the h1 */
+    height: 20px;              /* start at the top of the h1 */
+    bottom: 0.3em;             /* stretch to the bottom of the h1 */
+    width: 4px;            /* thickness of the line */
+    border-radius: 2px;
+    background-color: #F52D15;
+}
+
+/* Paragraphs */
+.reveal .slides p {
+    font-size: 1.4em;
+    font-weight: 400;
+    margin: 0.5em 0;
+   
+}
+
+.reveal .slides ul {
+ font-size: 1.4em !important; 
+}
+
+.reveal .slides ol {
+ font-size: 1.4em !important; 
+}
+
+
+/* Lists (including incremental bullet points) */
+.reveal .slides ul, .reveal .slides ol {
+    font-size: 1em;
+    margin-left: 2em;
+}
+
+.reveal .slides ul li, .reveal .slides ol li {
+    margin-bottom: 0.3em;
+}
+
+/* Incremental bullet points (fragments) */
+.reveal .slides .fragment {
+    font-size: 1em;
+    transition: opacity 0.5s ease;
+}
+
+/* Ensure styles apply in presentation mode */
+.reveal .slides section {
+    background-color: #1a1a1a;
+    padding: 20px;
+
+    /* override centering */
+    text-align: left !important;
+    justify-content: flex-start !important;
+    align-items: flex-start !important;
+}
+
+
+/* ===== Hebrew styling — put at the END of your CSS file ===== */
+
+/* Target a variety of places the class might appear; high specificity + !important so it wins */
+.reveal .slides section.heb,
+.reveal .slides p.heb,
+.reveal .slides blockquote.heb,
+.reveal .slides div.heb,
+.reveal .slides li.heb,
+.reveal .slides h1.heb,
+.reveal .slides h2.heb,
+.reveal .slides h3.heb,
+.reveal .slides span.heb,
+.reveal .slides .heb { 
+  direction: rtl !important;
+  unicode-bidi: isolate-override !important;
+  text-align: right !important;
+  font-family: "Noto Serif", "Noto Sans Hebrew", serif !important;
+  font-size: 1.15em !important;     /* tweak as you like */
+  line-height: 1.6 !important;
+}
+
+/* Inline span usage (single words inside English) */
+.reveal .slides span.heb {
+  display: inline-block !important;   /* keeps scaling predictable */
+  vertical-align: baseline !important;
+}
+
+/* Prevent verse numbers and <sup> from being enlarged or flipped */
+.reveal .slides .heb sup,
+.reveal .slides .heb .vnum,
+.reveal .slides .heb .verse {
+  font-size: 0.85em !important;
+  direction: ltr !important;
+  unicode-bidi: isolate !important;
+  vertical-align: baseline !important;
+}
+
+/* If you have fragments (incremental bullets), ensure style persists */
+.reveal .slides .fragment.heb,
+.reveal .slides .fragment .heb {
+  font-size: 1.15em !important;
+  direction: rtl !important;
+}
+
+/* Small utility: if you *do* explicitly use dir or lang */
+.reveal .slides [dir="rtl"],
+.reveal .slides :lang(he) {
+  direction: rtl !important;
+  unicode-bidi: isolate-override !important;
+  font-family: "Noto Serif", "Noto Sans Hebrew", serif !important;
+}
+
