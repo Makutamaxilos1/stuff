@@ -238,4 +238,44 @@
   unicode-bidi: isolate-override !important;
   font-family: "Noto Serif", "Noto Sans Hebrew", serif !important;
 }
+/* ===== TABLE STYLING ===== */
 
+.reveal .slides table {
+  width: 100%;
+  border-collapse: collapse;     /* makes borders clean */
+  margin: 1.2em 0;               /* space around table */
+  font-size: 1.2em;              /* larger text */
+  color: #fff;                   /* text color */
+  background-color: #2a2a2a;     /* subtle contrast to dark bg */
+  border: 1px solid #555;        /* visible outer border */
+  border-radius: 6px;
+  overflow: hidden;              /* ensures radius clips */
+}
+
+.reveal .slides th,
+.reveal .slides td {
+  padding: 0.6em 1em;            /* spacing inside cells */
+  border: 1px solid #555;        /* visible cell dividers */
+  text-align: left;              /* typical alignment */
+}
+
+.reveal .slides th {
+  background-color: #3a3a3a;     /* header contrast */
+  color: #78fffb;                /* highlight tone */
+  font-weight: 700;
+  font-size: 1.25em;
+}
+
+.reveal .slides tr:nth-child(even) td {
+  background-color: #242424;     /* alternate rows */
+}
+
+.reveal .slides tr:hover td {
+  background-color: #374d48;     /* highlight on hover */
+}
+
+/* Optional: add horizontal space between columns (if desired) */
+.reveal .slides td + td,
+.reveal .slides th + th {
+  padding-left: 1.5em;           /* space between columns */
+}
