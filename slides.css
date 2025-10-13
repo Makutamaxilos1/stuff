@@ -139,7 +139,7 @@
     bottom: 0.3em;             /* stretch to the bottom of the h1 */
     width: 4px;            /* thickness of the line */
     border-radius: 2px;
-    background-color: #F52D15;
+    background-color: #d1f6ff;
 }
 
 /* Paragraphs */
@@ -236,7 +236,7 @@
 .reveal .slides :lang(he) {
   direction: rtl !important;
   unicode-bidi: isolate-override !important;
-  font-family: "Noto Serif", "Noto Sans Hebrew", serif !important;
+  font-family: "Noto Serif", serif !important;
 }
 /* ===== TABLE STYLING ===== */
 
@@ -278,4 +278,49 @@
 .reveal .slides td + td,
 .reveal .slides th + th {
   padding-left: 1.5em;           /* space between columns */
+}
+
+.hltr-pink {
+    color: rgb(247, 135, 150);
+    background-color: hsla(0, 69%, 70%, 0);
+}
+
+.hltr-red {
+    color: rgb(254, 88, 88);
+    background-color: hsla(0, 69%, 70%, 0);
+}
+
+.hltr-orange {
+    color: rgb(255, 184, 103);
+    background-color: hsla(0, 69%, 70%, 0);
+}
+
+.hltr-yellow {
+    color: rgb(255, 250, 149);
+    background-color: hsla(0, 69%, 70%, 0);
+}
+
+.hltr-green {
+    color: rgb(160, 255, 149);
+    background-color: hsla(0, 69%, 70%, 0);
+}
+
+.hltr-cyan {
+    color: rgb(149, 255, 241);
+    background-color: hsla(0, 69%, 70%, 0);
+}
+
+.hltr-blue {
+    color: rgb(38, 168, 238);
+    background-color: hsla(0, 69%, 70%, 0);
+}
+
+.hltr-purple {
+    color: rgb(253, 149, 255);
+    background-color: hsla(0, 69%, 70%, 0);
+}
+
+.hltr-grey {
+    color: rgb(136, 136, 136);
+    background-color: hsla(0, 69%, 70%, 0);
 }
