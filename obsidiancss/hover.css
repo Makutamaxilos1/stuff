@@ -1,0 +1,86 @@
+/* @settings
+name: Hebrew Niqqud Toggle
+id: hebrew-niqqud-toggle
+settings:
+  - 
+    id: niqqud-enabled
+    title: Show Niqqud
+    description: Toggle to show Hebrew text with Niqqud
+    type: class-toggle
+    default: false
+*/
+
+/* Custom style for our lyrics reveal element */
+.lyrics-reveal {
+    /* Style the visible text 
+    text-decoration: underline dotted var(--color-accent);*/
+    cursor: help;
+    position: relative;
+}
+
+/* Hide the content we want to reveal */
+.lyrics-reveal::after {
+    content: attr(aria-label); /* Pulls the reveal text from the aria-label attribute */
+    position: fixed; /* Fix the position relative to the screen */
+    top: 50px;    /* Position at the bottom of the screen */
+    left: 50%;       /* Center horizontally */
+    transform: translateX(-50%);
+    
+    /* Style the revealed text box (the tooltip) */
+    background-color: var(--background-primary);
+    
+    padding: 8px 15px;
+    border-radius: 6px;
+    font-size: 1em;
+    /* font-style: italic;
+     */
+    /* By default, hide the tooltip */
+     font-family: "Noto Serif", serif !important;
+    opacity: 0;
+    visibility: hidden;
+    /* transition: opacity 0.3s, visibility 0.1s; */
+    
+    /* Ensure it is on top of other elements */
+    z-index: 1000; 
+    font-size: 20px;
+    /* Prevent text from going too wide */
+    max-width: 80%;
+    white-space: nowrap; 
+}
+
+/* On hover, make the content visible */
+.lyrics-reveal:hover::after,
+.lyrics-reveal.active::after {
+    opacity: 1 !important;
+    visibility: visible !important;
+}
+
+
+.theme-light .lyrics-reveal:hover::after {
+
+    color: rgb(11, 131, 171);
+}
+
+.theme-dark .lyrics-reveal:hover::after {
+      
+    color: rgb(63, 194, 237);
+}
+
+.heb, .heb-no-niqqud, .heb-niqqud {
+  font-size: 160% !important;
+  opacity: 0.8;
+  font-family: "Noto Serif", serif !important;
+}
+
+.lyrics-reveal:hover .heb, .lyrics-reveal.active .heb, .lyrics-reveal:hover .heb-no-niqqud, .lyrics-reveal.active .heb-no-niqqud, .lyrics-reveal:hover .heb-niqqud, .lyrics-reveal.active .heb-niqqud {
+    color: var(--color-accent);
+}
+
+
+/* safer: don't rely on theme-dark */
+body.niqqud-enabled .heb-niqqud { display: inline !important; }
+body.niqqud-enabled .heb-no-niqqud { display: none !important; }
+
+/* default: no niqqud show */
+.heb-niqqud { display: none; }
+.heb-no-niqqud { display: inline; }

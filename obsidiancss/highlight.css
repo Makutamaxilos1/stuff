@@ -1,0 +1,91 @@
+
+.theme-dark .hltr-pink {
+    color: rgb(247, 135, 150);
+    background-color: hsla(0, 69%, 70%, 0);
+}
+
+.theme-dark .hltr-red {
+    color: rgb(254, 88, 88);
+    background-color: hsla(0, 69%, 70%, 0);
+}
+
+.theme-dark .hltr-orange {
+    color: rgb(255, 184, 103);
+    background-color: hsla(0, 69%, 70%, 0);
+}
+
+.theme-dark .hltr-yellow {
+    color: rgb(255, 250, 149);
+    background-color: hsla(0, 69%, 70%, 0);
+}
+
+.theme-dark .hltr-green {
+    color: rgb(160, 255, 149);
+    background-color: hsla(0, 69%, 70%, 0);
+}
+
+.theme-dark .hltr-cyan {
+    color: rgb(149, 255, 241);
+    background-color: hsla(0, 69%, 70%, 0);
+}
+
+.theme-dark .hltr-blue {
+    color: rgb(38, 168, 238);
+    background-color: hsla(0, 69%, 70%, 0);
+}
+
+.theme-dark .hltr-purple {
+    color: rgb(253, 149, 255);
+    background-color: hsla(0, 69%, 70%, 0);
+}
+
+.theme-dark .hltr-grey {
+    color: rgb(136, 136, 136);
+    background-color: hsla(0, 69%, 70%, 0);
+}
+
+
+.theme-light .hltr-pink {
+    color: rgb(241, 111, 128);
+    background-color: hsla(0, 69%, 70%, 0);
+}
+
+.theme-light .hltr-red {
+    color: rgb(195, 36, 36);
+    background-color: hsla(0, 69%, 70%, 0);
+}
+
+.theme-light .hltr-orange {
+    color: rgb(212, 125, 27);
+    background-color: hsla(0, 69%, 70%, 0);
+}
+
+.theme-light .hltr-yellow {
+    color: rgb(182, 173, 0);
+    background-color: hsla(0, 69%, 70%, 0);
+}
+
+.theme-light .hltr-green {
+    color: rgb(18, 144, 4);
+    background-color: hsla(0, 69%, 70%, 0);
+}
+
+.theme-light .hltr-cyan {
+    color: rgb(0, 127, 110);
+    background-color: hsla(0, 69%, 70%, 0);
+}
+
+.theme-light .hltr-blue {
+    color: rgb(0, 76, 117);
+    background-color: hsla(0, 69%, 70%, 0);
+}
+
+.theme-light .hltr-purple {
+    color: rgb(129, 0, 131);
+    background-color: hsla(0, 69%, 70%, 0);
+}
+
+.theme-light .hltr-grey {
+    color: rgb(136, 136, 136);
+    background-color: hsla(0, 69%, 70%, 0);
+}

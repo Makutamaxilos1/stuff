@@ -1,0 +1,116 @@
+:root {
+  --font-size-base: 16px;
+}
+
+/* Target PDF viewer in dark mode with broader selectors */
+.theme-dark .pdf-viewer,
+.theme-dark .pdf-embed,
+.theme-dark .workspace-leaf-content[data-type="pdf"] canvas,
+.theme-dark .workspace-leaf-content[data-type="pdf"] iframe {
+    filter: invert(0.9) hue-rotate(180deg) 
+}
+
+/* Ensure images within PDFs are not inverted to preserve their colors */
+.theme-dark .pdf-viewer img,
+.theme-dark .pdf-embed img,
+.theme-dark .workspace-leaf-content[data-type="pdf"] img {
+    filter: invert(1) hue-rotate(-180deg); /* Revert inversion for images */
+}
+
+/* Headings use Noto Serif */
+.markdown-preview-view h1,
+.markdown-preview-view h2,
+.markdown-preview-view h3,
+.markdown-preview-view h4,
+.markdown-preview-view h5,
+.cm-s-obsidian .cm-header-1,
+.cm-s-obsidian .cm-header-2,
+.cm-s-obsidian .cm-header-3,
+.cm-s-obsidian .cm-header-4,
+.cm-s-obsidian .cm-header-5 {
+  font-family: "Noto Sans", sans-serif !important;
+}
+
+/* Body text uses Noto Sans }*/
+.theme-light .markdown-preview-view,
+.theme-light .markdown-preview-view :not(h1):not(h2):not(h3):not(h4):not(h5),
+.theme-light .cm-content {
+  font-family: "Noto Serif", serif !important;
+}
+
+/* H1 */
+.markdown-preview-view h1,
+.cm-s-obsidian .cm-header-1 {
+  font-size: calc(16px*3.2) !important;   /* adjust to taste */
+  font-weight: 700;
+}
+
+/* H2 */
+.markdown-preview-view h2,
+.cm-s-obsidian .cm-header-2 {
+  font-size: calc(16px*2.2) !important;   /* adjust to taste */
+  font-weight: 600;
+}
+
+/* H3 */
+.markdown-preview-view h3,
+.cm-s-obsidian .cm-header-3 {
+  font-size: calc(16px*2.2) !important;   /* adjust to taste */
+  opacity: 0.9;
+  font-weight: 400;
+}
+
+/* H4 */
+.markdown-preview-view h4,
+.cm-s-obsidian .cm-header-4 {
+  font-size: calc(16px*1.5) !important;   /* adjust to taste */
+  font-weight: 400;
+}
+
+/* H5 */
+.markdown-preview-view h5,
+.cm-s-obsidian .cm-header-5 {
+  font-size: calc(16px*1) !important;   /* adjust to taste */
+  font-weight: 700;
+}
+
+/* Preview (reading mode) */
+.markdown-preview-view :not(pre):not(code) {
+  font-size: 1em;
+}
+
+/* Match Hebrew characters U+0590–05FF */
+.markdown-preview-view :not(pre):not(code) {
+  unicode-bidi: isolate;
+}
+
+.markdown-preview-view :not(pre):not(code) {
+  font-size: 1em;
+}
+
+.markdown-preview-view :not(pre):not(code) {
+  font-feature-settings: "liga";
+}
+
+/* The key trick: regex-like attribute selector */
+.markdown-preview-view :not(pre):not(code) {
+  font-size: 1em;
+}
+
+.markdown-preview-view :not(pre):not(code) {
+  font-size: 1em;
+}
+
+.markdown-preview-view :not(pre):not(code) {
+  font-size: 1em;
+}
+
+/* Use :dir(rtl) to catch Hebrew (since Hebrew is right-to-left) */
+.markdown-preview-view [dir="rtl"] {
+  font-size: 112% !important;
+}
+
+/* Editor (live preview/source mode) */
+.cm-content [dir="rtl"] {
+  font-size: 150% !important;
+}
