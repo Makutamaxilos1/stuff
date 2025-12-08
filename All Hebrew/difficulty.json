@@ -1,0 +1,138 @@
+{
+  "hebData.db|Nehemiah|13|1|1": {
+    "resource": "hebData.db",
+    "book": "Nehemiah",
+    "chapter": 13,
+    "verse": 1,
+    "number": 1,
+    "status": "Strange Meaning"
+  },
+  "engData_leb_data.db|Nehemiah|13|2|28": {
+    "resource": "engData_leb_data.db",
+    "book": "Nehemiah",
+    "chapter": "13",
+    "verse": "2",
+    "number": 28,
+    "status": "Unrecognized"
+  },
+  "hebData.db|Nehemiah|13|1|2": {
+    "resource": "hebData.db",
+    "book": "Nehemiah",
+    "chapter": 13,
+    "verse": 1,
+    "number": 2,
+    "status": "Challenging"
+  },
+  "hebData.db|Nehemiah|13|1|5": {
+    "resource": "hebData.db",
+    "book": "Nehemiah",
+    "chapter": 13,
+    "verse": 1,
+    "number": 5,
+    "status": "Challenging"
+  },
+  "hebData.db|Nehemiah|13|1|4": {
+    "resource": "hebData.db",
+    "book": "Nehemiah",
+    "chapter": 13,
+    "verse": 1,
+    "number": 4,
+    "status": "Hard"
+  },
+  "hebData.db|Nehemiah|13|1|18": {
+    "resource": "hebData.db",
+    "book": "Nehemiah",
+    "chapter": 13,
+    "verse": 1,
+    "number": 18,
+    "status": "Hard"
+  },
+  "hebData.db|Nehemiah|13|2|14": {
+    "resource": "hebData.db",
+    "book": "Nehemiah",
+    "chapter": 13,
+    "verse": 2,
+    "number": 14,
+    "status": "Unrecognized"
+  },
+  "hebData.db|Nehemiah|13|3|16": {
+    "resource": "hebData.db",
+    "book": "Nehemiah",
+    "chapter": 13,
+    "verse": 3,
+    "number": 16,
+    "status": "Challenging"
+  },
+  "hebData.db|Nehemiah|13|1|12": {
+    "resource": "hebData.db",
+    "book": "Nehemiah",
+    "chapter": 13,
+    "verse": 1,
+    "number": 12,
+    "status": "Challenging"
+  },
+  "hebData.db|Nehemiah|13|1|26": {
+    "resource": "hebData.db",
+    "book": "Nehemiah",
+    "chapter": 13,
+    "verse": 1,
+    "number": 26,
+    "status": "Unrecognized"
+  },
+  "hebData.db|Nehemiah|13|4|2": {
+    "resource": "hebData.db",
+    "book": "Nehemiah",
+    "chapter": 13,
+    "verse": 4,
+    "number": 2,
+    "status": "Unrecognized"
+  },
+  "hebData.db|Nehemiah|13|6|12": {
+    "resource": "hebData.db",
+    "book": "Nehemiah",
+    "chapter": 13,
+    "verse": 6,
+    "number": 12,
+    "status": "Unrecognized"
+  },
+  "engData_leb_data.db|Nehemiah|13|6|33": {
+    "resource": "engData_leb_data.db",
+    "book": "Nehemiah",
+    "chapter": "13",
+    "verse": "6",
+    "number": 33,
+    "status": "Unrecognized"
+  },
+  "gntData_SBLGNT.db|Mark|5|8|4": {
+    "resource": "gntData_SBLGNT.db",
+    "book": "Mark",
+    "chapter": "5",
+    "verse": "8",
+    "number": 4,
+    "status": "Unrecognized"
+  },
+  "hebData.db|Nehemiah|13|2|7": {
+    "resource": "hebData.db",
+    "book": "Nehemiah",
+    "chapter": 13,
+    "verse": 2,
+    "number": 7,
+    "status": "Unrecognized"
+  },
+  "engData_leb_data.db|Nehemiah|13|5|31": {
+    "resource": "engData_leb_data.db",
+    "book": "Nehemiah",
+    "chapter": "13",
+    "verse": "5",
+    "number": 31,
+    "status": "Unrecognized"
+  },
+  "lxxData.db|Genesis|1|1|7": {
+    "resource": "lxxData.db",
+    "book": "Genesis",
+    "chapter": "1",
+    "verse": "1",
+    "number": 7,
+    "status": "Hard"
+  }
+}

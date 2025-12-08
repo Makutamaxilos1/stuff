@@ -1,0 +1,510 @@
+.chapter .Mac {
+  display: inline;
+}
+
+.chapter .noMac {
+  display: none;
+}
+
+.chapter .N {
+  display: inline;
+}
+
+.chapter .nN {
+  display: none;
+}
+
+/* When macrons OFF */
+.chapter[data-show-mac="0"] .Mac {
+  display: none;
+}
+
+.chapter[data-show-mac="0"] .noMac {
+  display: inline;
+}
+
+/* When niqqud OFF */
+.chapter[data-show-niq="0"] .N {
+  display: none;
+}
+
+.chapter[data-show-niq="0"] .nN {
+  display: inline;
+}
+
+/* RTL/LTR as before */
+[lang="he"] {
+  direction: rtl;
+  text-align: right;
+}
+
+[lang="el"],
+[lang="en"] {
+  direction: ltr;
+  text-align: left;
+}
+
+
+.seraph-hsection-wrapper {
+  display: grid;
+  grid-template-columns: repeat(auto-fit, minmax(320px, 1fr));
+  gap: 0.6em;
+  width: 100%;
+  margin: 1.5em 0;
+}
+
+.seraph-hsection {
+  min-width: 0;
+  /* THIS IS CRITICAL for grid/flex children with long text */
+  border-left: none !important;
+  padding-left: 0 !important;
+  margin-left: 0 !important;
+}
+
+.seraph-hsection .chapter {
+  width: 100%;
+  max-width: 100%;
+  overflow-wrap: break-word;
+  word-wrap: break-word;
+  hyphens: auto;
+}
+
+
+.seraph-hsection-wrapper .seraph-hsection:first-child {
+  border-left: none;
+  padding-left: 0;
+}
+
+.seraph-references-text {
+  font-style: italic;
+  /* Text in italics */
+  opacity: 0.8;
+  /* Text opacity 0.8 */
+  font-size: 0.9em;
+  /* Keep text smaller */
+  color: var(--text-muted);
+}
+
+.seraph-chapter-title {
+  margin: 0 0 0.5em 0;
+  font-size: 1.6em;
+  font-weight: 600;
+  color: var(--text-normal);
+  cursor: default;
+}
+
+.cycle-header.seraph-chapter-title {
+  cursor: pointer;
+}
+
+[lang="he"] {
+  word-break: break-word;
+  /* Essential for Hebrew without spaces */
+}
+
+/* Custom styling for the reference when displayed as a footnote */
+.seraph-reference-footnote {
+  font-size: 0.9em;
+  font-style: italic;
+  text-align: right;
+  margin-top: 10px;
+  /* Add some space above */
+  cursor: pointer;
+  /* Ensure the pointer shows it's clickable */
+  color: var(--text-muted);
+  /* Use a muted color for a footnote feel */
+}
+
+.seraph-ref-below {
+  display: none !important;
+  /* Add footnote styling here (e.g., font-style, text-align, cursor) */
+  font-size: 0.9em;
+  font-style: italic;
+  text-align: right;
+  margin-top: 10px;
+  cursor: pointer;
+  color: var(--text-muted);
+}
+
+/* Default state: Always show the title element */
+.seraph-ref-above {
+  display: block !important;
+  /* Add H1 styling here */
+  cursor: pointer;
+}
+
+/* Toggle: When data-ref-pos is 'below' */
+.seraph-overall-container[data-ref-pos="below"] .seraph-ref-above {
+  display: none !important;
+  /* Hide the Title/H1 */
+}
+
+.seraph-overall-container[data-ref-pos="below"] .seraph-ref-below {
+  display: block !important;
+  /* Show the Footnote/P */
+}
+
+/* Toggle: When data-ref-pos is 'above' (default) */
+.seraph-overall-container[data-ref-pos="above"] .seraph-ref-above {
+  display: block !important;
+  /* Show the Title/H1 */
+}
+
+.seraph-overall-container[data-ref-pos="above"] .seraph-ref-below {
+  display: none !important;
+  /* Hide the Footnote/P */
+}
+
+/*
+ * CSS for language-specific rendering
+ */
+
+/* Hebrew (Right-to-Left) */
+.hebrew {
+  /* Set base direction to RTL */
+  direction: rtl;
+  /* Set default text alignment to the right */
+  text-align: right;
+  /* Optional: Set a specific font for Hebrew if needed, like SBL Hebrew */
+  /* font-family: 'SBL Hebrew', serif; */
+}
+
+/* Ensure verse numbers and text flow correctly within the RTL context */
+.hebrew .p {
+  /* Inherit RTL from parent .hebrew div */
+  direction: rtl;
+  /* Important: use text-align: justify for clean block rendering */
+  text-align: justify;
+}
+
+/* If you use specific classes for the word spans that might need RTL */
+.hebrew .Word,
+.hebrew .verseM {
+  direction: rtl;
+  /* Ensure spans do not interfere with text flow */
+  display: inline;
+}
+
+/* Greek and English (Left-to-Right) */
+.greek,
+.english {
+  direction: ltr;
+  text-align: left;
+}
+
+/* src/styles.css */
+
+.seraph-tooltip,
+#word-tooltip {
+  position: fixed !important;
+  background-color: var(--background-secondary) !important;
+  border: 1px solid var(--background-modifier-border) !important;
+  padding: 6px 10px !important;
+  border-radius: 6px !important;
+  box-shadow: 0 4px 12px rgba(0, 0, 0, 0.2) !important;
+  font-size: 15px !important;
+  color: var(--text-normal) !important;
+  white-space: normal !important;
+  max-width: 80vw !important;
+  line-height: 1.4 !important;
+  z-index: 10000 !important;
+
+  /* CHANGED: Allow the mouse to interact with the tooltip (blocks underlying words) */
+  pointer-events: auto !important;
+}
+
+.seraph-tooltip:empty {
+  display: none !important;
+  border: none !important;
+  box-shadow: none !important;
+  padding: 0 !important;
+}
+
+/* Highlight Styles */
+.Word.seraph-highlight {
+  color: var(--seraph-hover-color) !important;
+  transition: color 0.1s ease;
+}
+
+/* DARK MODE: Must be applied when body.theme-dark is present */
+body.theme-dark {
+  /* Sets the final color variable to the dark mode color */
+  --seraph-hover-color: var(--seraph-color-dark, #f39c12);
+}
+
+/* LIGHT MODE: Must be applied when body.theme-light is present.
+   Adding an extra class selector to increase specificity and beat the Dark Mode default if it leaks. 
+   We will try targeting the root element within the body. */
+body.theme-light,
+body.theme-light .workspace-leaf-content {
+  /* Sets the final color variable to the light mode color */
+  --seraph-hover-color: var(--seraph-color-light, #d35400);
+}
+
+/* Fallback: If Obsidian's theme classes aren't loading yet, default to light mode color */
+body:not(.theme-light):not(.theme-dark) {
+  --seraph-hover-color: var(--seraph-color-light, #d35400);
+}
+
+/* Ensure the Word element is a positioning context */
+.seraph-container .Word {
+  position: relative;
+  /* Essential for absolute positioning of the highlight */
+  display: inline-block;
+  /* Helps wrap content correctly */
+}
+
+/* The absolutely positioned highlight element */
+.seraph-hard-highlight {
+  content: '';
+  position: absolute;
+  top: 0;
+  left: 0;
+  width: 100%;
+  height: 100%;
+  /* Use a distinct, semi-transparent color for the highlight */
+  background-color: var(--color-red-rgb, 255, 0, 0);
+  /* Example: Red highlight */
+  opacity: 0.2;
+  pointer-events: none;
+  /* Crucial: allows mouse interaction with the underlying .Word element */
+  border-radius: 2px;
+  z-index: 1;
+  /* Place below the text content (text has higher z-index by default) */
+}
+
+/* ------------------------------------------------------------ */
+/* Tooltip Dropdown Styles */
+/* ------------------------------------------------------------ */
+
+.seraph-hard-select-container {
+  padding: 5px 0 0 0;
+  margin-top: 5px;
+  border-top: 1px solid var(--background-modifier-border);
+  display: flex;
+  align-items: center;
+  gap: 10px;
+}
+
+.seraph-hard-select {
+  flex-grow: 1;
+  /* Standard Obsidian input style */
+  padding: 4px 8px;
+  border-radius: 4px;
+  background-color: var(--background-primary);
+  border: 1px solid var(--background-modifier-border);
+  color: var(--text-normal);
+  cursor: pointer;
+}
+
+.difficulty-highlight {
+  position: absolute;
+  inset: 0;
+  pointer-events: none;
+  border-radius: 3px;
+  opacity: 0.25;
+  transition: opacity 0.2s ease;
+  z-index: 1;
+  /* Above background, below text */
+}
+
+.difficulty-highlight.hard {
+  background: #e74c3c;
+}
+
+/* Red */
+.difficulty-highlight.challenging {
+  background: #f39c12;
+}
+
+/* Yellow-Orange */
+.difficulty-highlight.unrecognized {
+  background: #3498db;
+}
+
+/* Blue */
+.difficulty-highlight.strange-meaning {
+  background: #9b59b6;
+}
+
+/* Purple */
+
+.Word:hover .difficulty-highlight {
+  opacity: 0.4;
+}
+
+/* Ensure the word text is on top */
+.Word {
+  position: relative;
+  z-index: 2;
+  /* Text layer above highlight */
+}
+
+.theme-dark .difficulty-highlight {
+  opacity: 30%;
+  mix-blend-mode: lighten;
+}
+
+.theme-light .difficulty-highlight {
+  opacity: 30%;
+  mix-blend-mode: darken;
+}
+
+.range-highlight {
+  position: absolute;
+  pointer-events: none;
+  border-radius: 4px;
+  opacity: 0.25;
+  transition: opacity 0.2s ease;
+  z-index: 1;
+}
+
+.chapter:hover .range-highlight {
+  opacity: 0.4;
+}
+
+.range-highlight.highlight-1 {
+  background: #ffff00;
+}
+
+/* Yellow */
+.range-highlight.highlight-2 {
+  background: #00ff00;
+}
+
+/* Green */
+.range-highlight.highlight-3 {
+  background: #00ffff;
+}
+
+/* Cyan */
+.range-highlight.highlight-4 {
+  background: #0000ff;
+}
+
+/* Blue */
+.range-highlight.highlight-5 {
+  background: #ff00ff;
+}
+
+/* Magenta */
+.range-highlight.highlight-6 {
+  background: #ff69b4;
+}
+
+/* Pink */
+.range-highlight.highlight-7 {
+  background: #808080;
+}
+
+/* Gray */
+
+.range-highlight.delight {
+  background: rgba(128, 128, 128, 0.4);
+  mix-blend-mode: multiply;
+}
+
+.range-highlight-overlay {
+  opacity: 0.25;
+  transition: opacity 0.2s ease;
+  z-index: 1;
+  pointer-events: auto !important;
+}
+
+.chapter:hover .range-highlight-overlay {
+  opacity: 0.4;
+}
+
+.range-delete-btn {
+  pointer-events: auto !important;
+  background: rgba(0, 0, 0, 0.4);
+  color: white;
+  width: 16px;
+  height: 16px;
+  border-radius: 50%;
+  text-align: center;
+  line-height: 16px;
+  font-weight: bold;
+}
+
+.range-delete-btn:hover {
+  background: red;
+}
+
+/* Range Highlight Overlay */
+.range-highlight-overlay {
+  position: absolute;
+  pointer-events: none;
+  border-radius: 4px;
+  opacity: 0.25;
+  transition: opacity 0.2s ease;
+  z-index: 1;
+  /* Below text */
+}
+
+.chapter:hover .range-highlight-overlay {
+  opacity: 0.4;
+}
+
+.range-highlight-overlay.highlight-1 {
+  background: #ffff00;
+}
+
+/* Yellow */
+.range-highlight-overlay.highlight-2 {
+  background: #00ff00;
+}
+
+/* Green */
+.range-highlight-overlay.highlight-3 {
+  background: #00ffff;
+}
+
+/* Cyan */
+.range-highlight-overlay.highlight-4 {
+  background: #0000ff;
+}
+
+/* Blue */
+.range-highlight-overlay.highlight-5 {
+  background: #ff00ff;
+}
+
+/* Magenta */
+.range-highlight-overlay.highlight-6 {
+  background: #ff69b4;
+}
+
+/* Pink */
+.range-highlight-overlay.highlight-7 {
+  background: #808080;
+}
+
+/* Gray */
+
+.range-highlight-overlay.delight {
+  background: rgba(128, 128, 128, 0.3);
+  mix-blend-mode: multiply;
+  /* Lowers contrast */
+}
+
+/* Delete Button */
+.range-delete-btn {
+  pointer-events: auto !important;
+  /* Clickable */
+  z-index: 3;
+  /* Above text (text z=2) */
+  background: rgba(0, 0, 0, 0.4);
+  color: white;
+  width: 16px;
+  height: 16px;
+  border-radius: 50%;
+  text-align: center;
+  line-height: 16px;
+  font-weight: bold;
+  cursor: pointer;
+}
+
+.range-delete-btn:hover {
+  background: red;
+}

@@ -1,0 +1,9 @@
+{
+    "id": "bibapp1",
+    "name": "Hebrew Data Plugin",
+    "version": "1.0.0",
+    "minAppVersion": "0.15.0",
+    "description": "Query and display data from the Hebrew database (hebData.db) in Obsidian.",
+    "author": "Your Name",
+    "isDesktopOnly": true
+  }

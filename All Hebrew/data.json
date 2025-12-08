@@ -1,0 +1,19 @@
+{
+  "enableMacrons": true,
+  "enableNiqqud": true,
+  "enableVerseNumbers": true,
+  "referenceFormatBelow": true,
+  "defaultOtVersions": [
+    "HEB",
+    "LEB",
+    "LXX"
+  ],
+  "defaultNtVersions": [
+    "SBLGNT",
+    "KJV",
+    "TNT"
+  ],
+  "wordHoverColorLight": "#049a98",
+  "wordHoverColorDark": "#07d0df",
+  "verseDisplay": "never"
+}

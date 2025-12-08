@@ -1,0 +1,81 @@
+{
+  "resource_dbs": [
+    {
+      "dbLocation": "resources/engData_asv_data.db",
+      "name": "American Standard Version (ASV)",
+      "abbreviation": "ASV",
+      "details": "English Translation. Known for its literal translation from the original languages.",
+      "language": "English"
+    },
+    {
+      "dbLocation": "resources/endData_bsb_data.db",
+      "name": "Berean Study Bible (BSB)",
+      "abbreviation": "BSB",
+      "details": "English Translation. Often used for study and comparison, noted for its modern language.",
+      "language": "English"
+    },
+    {
+      "dbLocation": "resources/endData_kjva_data.db",
+      "name": "King James Version, Authorized (KJVA)",
+      "abbreviation": "KJVA",
+      "details": "The primary default English resource used by the SeraphProcessor.",
+      "language": "English"
+    },
+    {
+      "dbLocation": "resources/endData_leb_data.db",
+      "name": "Lexham English Bible (LEB)",
+      "abbreviation": "LEB",
+      "details": "English Translation. A formal equivalent translation focused on clarity and consistency.",
+      "language": "English"
+    },
+    {
+      "dbLocation": "resources/endData_net_data.db",
+      "name": "New English Translation (NET)",
+      "abbreviation": "NET",
+      "details": "English Translation. Features extensive translator notes and is often used for scholarly work.",
+      "language": "English"
+    },
+    {
+      "dbLocation": "resources/gntData_MorphGNT.db",
+      "name": "Morphologically Tagged Greek New Testament (MorphGNT)",
+      "abbreviation": "MorphGNT",
+      "details": "Greek Text. Contains morphological data for every word, useful for grammar lookups.",
+      "language": "Greek"
+    },
+    {
+      "dbLocation": "resources/gntData_Nestle1904.db",
+      "name": "Nestle 1904 Greek New Testament",
+      "abbreviation": "NA1904",
+      "details": "Greek Text. A public domain critical edition of the Greek New Testament.",
+      "language": "Greek"
+    },
+    {
+      "dbLocation": "resources/gntData_SBLGNT.db",
+      "name": "SBL Greek New Testament (SBLGNT)",
+      "abbreviation": "SBLGNT",
+      "details": "Greek Text. A modern critical edition based primarily on the UBS GNT 5th edition.",
+      "language": "Greek"
+    },
+    {
+      "dbLocation": "resources/gntData_TNT.db",
+      "name": "Tyndale New Testament (TNT)",
+      "abbreviation": "TNT",
+      "details": "Greek Text. An edition of the New Testament following the Tyndale House Greek New Testament principles.",
+      "language": "Greek"
+    },
+    {
+      "dbLocation": "resources/hebData.db",
+      "name": "Hebrew Old Testament (Generic)",
+      "abbreviation": "Heb",
+      "details": "Contains the Hebrew text, likely the Biblia Hebraica Stuttgartensia (BHS) or Westminster Leningrad Codex (WLC).",
+      "language": "Hebrew"
+    },
+    {
+      "dbLocation": "resources/lxxData.db",
+      "name": "Septuagint (LXX)",
+      "abbreviation": "LXX",
+      "details": "Contains the Koine Greek translation of the Hebrew Old Testament.",
+      "language": "Greek"
+    }
+  ]
+}

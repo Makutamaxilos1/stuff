@@ -1,0 +1,82 @@
+{
+  "engData_leb_data.db|Nehemiah|13|8-7|13-22": {
+    "resource": "engData_leb_data.db",
+    "book": "Nehemiah",
+    "chapter": "13",
+    "verse_start": "8",
+    "verse_end": "7",
+    "word_start": 13,
+    "word_end": 22,
+    "type": "highlight1"
+  },
+  "engData_leb_data.db|Nehemiah|13|1-1|14-29": {
+    "resource": "engData_leb_data.db",
+    "book": "Nehemiah",
+    "chapter": "13",
+    "verse_start": "1",
+    "verse_end": "1",
+    "word_start": 14,
+    "word_end": 29,
+    "type": "highlight3"
+  },
+  "engData_leb_data.db|Nehemiah|13|4-5|3-11": {
+    "resource": "engData_leb_data.db",
+    "book": "Nehemiah",
+    "chapter": "13",
+    "verse_start": "4",
+    "verse_end": "5",
+    "word_start": 3,
+    "word_end": 11,
+    "type": "highlight2"
+  },
+  "engData_leb_data.db|Nehemiah|13|5-5|18-33": {
+    "resource": "engData_leb_data.db",
+    "book": "Nehemiah",
+    "chapter": "13",
+    "verse_start": "5",
+    "verse_end": "5",
+    "word_start": 18,
+    "word_end": 33,
+    "type": "highlight4"
+  },
+  "engData_leb_data.db|Nehemiah|13|6-6|14-30": {
+    "resource": "engData_leb_data.db",
+    "book": "Nehemiah",
+    "chapter": "13",
+    "verse_start": "6",
+    "verse_end": "6",
+    "word_start": 14,
+    "word_end": 30,
+    "type": "highlight2"
+  },
+  "engData_leb_data.db|Nehemiah|13|8-8|4-9": {
+    "resource": "engData_leb_data.db",
+    "book": "Nehemiah",
+    "chapter": "13",
+    "verse_start": "8",
+    "verse_end": "8",
+    "word_start": 4,
+    "word_end": 9,
+    "type": "highlight2"
+  },
+  "engData_leb_data.db|Nehemiah|13|10-11|3-22": {
+    "resource": "engData_leb_data.db",
+    "book": "Nehemiah",
+    "chapter": "13",
+    "verse_start": "10",
+    "verse_end": "11",
+    "word_start": 3,
+    "word_end": 22,
+    "type": "highlight1"
+  },
+  "engData_leb_data.db|Nehemiah|13|5-5|3-13": {
+    "resource": "engData_leb_data.db",
+    "book": "Nehemiah",
+    "chapter": "13",
+    "verse_start": "5",
+    "verse_end": "5",
+    "word_start": 3,
+    "word_end": 13,
+    "type": "highlight5"
+  }
+}
