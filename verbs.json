@@ -1,0 +1,400 @@
+{
+  "אכל": {
+    "qal": {
+      "multiplier": 3,
+      "subject": ["solid"],
+      "objects": [
+        {
+          "o": ["food"]
+        },
+        {
+          
+        }
+      ],
+      "infinitive": { 
+        "str": "לֶאֱכֹל", 
+        "translation": "to eat" 
+      },
+      "participle": {
+        "translation": "eat/eating",
+        "singular": {
+          "masculine": "אוֹכֵל",
+          "feminine": "אוֹכֶלֶת"
+        },
+        "plural": {
+          "masculine": "אוֹכְלִים",
+          "feminine": "אוֹכְלוֹת"
+        }
+      },
+      "finite": {
+        "past": {
+            "translation": "ate",
+            "1s": "אָכַלְתִּי",
+            "3ms": "אָכַל"
+        }
+      }
+    },
+    "hiphil": {
+      "infinitive": { 
+        "str": "לְהַאֲכִיל", 
+        "translation": "to feed" 
+      },
+      "participle": {
+        "translation": "feed/feeding",
+        "singular": {
+          "masculine": "מַאֲכִיל",
+          "feminine": "מַאֲכִילָה"
+        }
+      },
+      "subject": ["animate"],
+      "prep_translations": {
+        "b": "with",
+        "l": "to"
+      },
+      "objects": [
+        {
+          "o": ["animate"]
+        },
+        {
+          "l": ["animate"],
+          "o": ["food"]
+        },
+        {
+          "o": ["animate"],
+          "b": ["food"]
+        },
+        {
+          "l": ["animate"],
+          "o": ["food"],
+          "b":[]
+        }
+      ]
+    }
+  },
+  "פגע": {
+    "qal": {
+        "subject": ["animate"],
+      "finite": {
+        "past": {
+                "translation": "expired",
+                "3ms": "פָּגַע"
+            }
+        }
+    }
+  },
+  "רצה": {
+    "qal": {
+      "infinitives": true,
+       "she": true,
+      "subject": ["animate"],
+      "objects": [
+        {
+          "o": ["physical"]
+        },
+        {
+          "o": ["concept"]
+        },
+        {
+          "o": ["animate"]
+        }
+      ],
+      "infinitive": {
+        "str": "לִרְצוֹת",
+        "translation": "to want"
+      },
+      "participle": {
+        "translation": "want/wanting",
+        "singular": {
+          "masculine": "רוֹצֶה",
+          "feminine": "רוֹצָה"
+        },
+        "plural": {
+          "masculine": "רוֹצִים",
+          "feminine": "רוֹצוֹת"
+        }
+      },
+      "finite": {
+        "past": {
+          "translation": "wanted",
+          "1s": "רָצִיתִי",
+          "3ms": "רָצָה",
+          "3fs": "רָצְתָה",
+          "1p": "רָצִינוּ",
+          "3mp": "רָצוּ",
+          "3fp": "רָצוּ"
+        },
+        "future": {
+          "translation": "will want",
+          "1s": "אֶרְצֶה",
+          "3ms": "יִרְצֶה",
+          "3fs": "תִּרְצֶה",
+          "1p": "נִרְצֶה",
+          "3mp": "יִרְצוּ",
+          "3fp": "תִּרְצֶינָה"
+        }
+      }
+    }
+  },
+  "אהב": {
+    "qal": {
+      "multiplier": 4,
+      "subject": ["physical"],
+      "infinitives": true,
+       "she": true,
+      "objects": [
+        {
+          "o": ["physical"]
+        },
+        {
+          "o": ["concept"]
+        },
+        {
+          "o": ["animate"]
+        }
+      ],
+      "infinitive": {
+        "str": "לֶאֱהֹב",
+        "translation": "to love"
+      },
+      "participle": {
+        "translation": "love/loving",
+        "singular": {
+          "masculine": "אוֹהֵב",
+          "feminine": "אוֹהֶבֶת"
+        },
+        "plural": {
+          "masculine": "אוֹהֲבִים",
+          "feminine": "אוֹהֲבוֹת"
+        }
+      },
+      "finite": {
+        "past": {
+          "translation": "loved",
+          "1s": "אָהַבְתִּי",
+          "3ms": "אָהַב",
+          "3fs": "אָהֲבָה",
+          "1p": "אָהַבְנו",
+          "3mp": "אָהֲבוּ",
+          "3fp": "אָהֲבוּ"
+        },
+        "future": {
+          "translation": "will love",
+          "1s": "אֶאֱהַב",
+          "3ms": "יֶאֱהַב",
+          "3fs": "תֶּאֱהַב",
+          "1p": "נֶאֱהַב",
+          "3mp": "יֹאהֲבוּ",
+          "3fp": "תֶּאֱהַבְנָה"
+        }
+      }
+    }
+  },
+  "הלך": {
+    "qal": {
+      "infinitives": true,
+      "subject": ["animate"],
+      "prep_translations": {
+        "l": "to"
+      },
+      "objects": [
+        {
+          
+        },
+        {
+          "l": ["place"]
+        }
+      ],
+      "infinitive": {
+        "str": "לָלֶכֶת",
+        "translation": "to walk"
+      },
+      "participle": {
+        "translation": "walk/walking",
+        "singular": {
+          "masculine": "הוֹלֵךְ",
+          "feminine": "הוֹלֶכֶת"
+        },
+        "plural": {
+          "masculine": "הוֹלְכִים",
+          "feminine": "הוֹלְכוֹת"
+        }
+      },
+      "finite": {
+        "past": {
+          "translation": "walked",
+          "1s": "הָלַכְתִּי",
+          "3ms": "הָלַךְ",
+          "3fs": "הָלְכָה",
+          "1p": "הָלַכְנוּ",
+          "3mp": "הָלְכוּ",
+          "3fp": "הָלְכוּ"
+        },
+        "future": {
+          "translation": "will walk",
+          "1s": "אֵלֵךְ",
+          "3ms": "יֵלֵךְ",
+          "3fs": "תֵּלֵךְ",
+          "1p": "נֵלֵךְ",
+          "3mp": "יֵלְכוּ",
+          "3fp": "תֵּלַכְנָה"
+        }
+      }
+    }
+  },
+  "חשב": {
+    "qal": {
+      "subject": ["human"],
+      "she": true,
+      "prep_translations": {
+        "ל": "to",
+        "על": "about"
+      },
+      "objects": [
+        {
+          
+        },
+        {
+          "o": ["concept"]
+        }
+      ],
+      "infinitive": {
+        "str": "לַחְשֹׁב",
+        "translation": "to think"
+      },
+      "participle": {
+        "translation": "think/thinking",
+        "singular": {
+          "masculine": "חוֹשֵׁב",
+          "feminine": "חוֹשֶׁבֶת"
+        },
+        "plural": {
+          "masculine": "חוֹשְׁבִים",
+          "feminine": "חוֹשְׁבוֹת"
+        }
+      },
+      "finite": {
+        "past": {
+          "translation": "thought",
+          "1s": "חָשַׁבְתִּי",
+          "3ms": "חָשַׁב",
+          "3fs": "חָשְׁבָה",
+          "1p": "חָשַׁבְנוּ",
+          "3mp": "חָשְׁבוּ",
+          "3fp": "חָשְׁבוּ"
+        },
+        "future": {
+          "translation": "will think",
+          "1s": "אֶחְשֹׁב",
+          "3ms": "יַחְשֹׁב",
+          "3fs": "תַּחְשֹׁב",
+          "1p": "נַחְשֹׁב",
+          "3mp": "יַחְשְׁבוּ",
+          "3fp": "תַּחְשֹׁבְנָה"
+        }
+      }
+    }
+  },
+  "קבל": {
+    "piel": {
+      "subject": ["animate"],
+      "infinitives": true,
+      "she": true,
+      "objects": [
+        {
+          "o": ["physical"]
+        },
+        {
+          "o": ["concept"]
+        },
+        {
+          "o": ["animate"]
+        }
+      ],
+      "infinitive": {
+        "str": "לְקַבֵּל",
+        "translation": "to receive"
+      },
+      "participle": {
+        "translation": "receive/receiving",
+        "singular": {
+          "masculine": "מְקַבֵּל",
+          "feminine": "מְקַבֶּלֶת"
+        },
+        "plural": {
+          "masculine": "מְקַבְּלִים",
+          "feminine": "מְקַבְּלוֹת"
+        }
+      },
+      "finite": {
+        "past": {
+          "translation": "received",
+          "1s": "קִבַּלְתִּי",
+          "3ms": "קִבֵּל",
+          "3fs": "קִבְּלָה",
+          "1p": "קִבַּלְנוּ",
+          "3mp": "קִבְּלוּ",
+          "3fp": "קִבְּלוּ"
+        },
+        "future": {
+          "translation": "will receive",
+          "1s": "אֲקַבֵּל",
+          "3ms": "יְקַבֵּל",
+          "3fs": "תְּקַבֵּל",
+          "1p": "נְקַבֵּל",
+          "3mp": "יְקַבְּלוּ",
+          "3fp": "תְּקַבֵּלְנָה"
+        }
+      }
+    }
+  },
+  "טילל": {
+    "piel": {
+      "subject": ["human"],
+      "infinitives": true,
+      "she": true,
+      "objects": [
+        {
+          "o": ["physical"]
+        },
+        {
+          "o": ["concept"]
+        }
+      ],
+      "infinitive": {
+        "str": "לְטַיֵּל",
+        "translation": "to travel/hike"
+      },
+      "participle": {
+        "translation": "travel/traveling",
+        "singular": {
+          "masculine": "מְטַיֵּל",
+          "feminine": "מְטַיֶּלֶת"
+        },
+        "plural": {
+          "masculine": "מְטַיְּלִים",
+          "feminine": "מְטַיְּלוֹת"
+        }
+      },
+      "finite": {
+        "past": {
+          "translation": "traveled/hiked",
+          "1s": "טִיַּלְתִּי",
+          "3ms": "טִיֵּל",
+          "3fs": "טִיְּלָה",
+          "1p": "טִיַּלְנוּ",
+          "3mp": "טִיְּלוּ",
+          "3fp": "טִיְּלוּ"
+        },
+        "future": {
+          "translation": "will travel/hike",
+          "1s": "אֲטַיֵּל",
+          "3ms": "יְטַיֵּל",
+          "3fs": "תְּטַיֵּל",
+          "1p": "נְטַיֵּל",
+          "3mp": "יְטַיְּלוּ",
+          "3fp": "תְּטַיֵּלְנָה"
+        }
+      }
+    }
+  }
+}

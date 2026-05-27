@@ -1,0 +1,308 @@
+{
+  "עוּגָה": {
+    "mulitplier": 4,
+    "traits": ["food", "object", "nomeat", "place", "prep"],
+    "constructOf": ["human", "time", "place"],
+    "gender": "f",
+    "singular": {
+      "translation": "cake",
+      "indef": "עוּגָה"
+    },
+    "plural": {
+      "translation": "cakes",
+      "indef": "עוּגוֹת"
+    }
+  },
+  "מַיִם": {
+    "traits": ["drink", "prep"],
+    "constructOf": ["animate", "building", "place"], 
+    "gender": "m",
+    "plural": {
+      "translation": "water",
+      "indef": "מַיִם"
+    }
+  },
+  "דִינוֹסָאוּר": {
+    "traits": ["predator"],
+    "constructOf": ["human", "time", "place"],
+    "gender": "m",
+    "singular": {
+      "translation": "dinosaur",
+      "indef": "דִינוֹסָאוּר"
+    }
+  },
+  "יֶלֶד": {
+    "traits": ["human"],
+    "constructOf": ["human", "time", "place"],
+    "gender": "m",
+    "singular": {
+      "translation": "boy",
+      "indef": "יֶלֶד"
+    },
+    "plural": {
+      "translation": "boys",
+      "indef": "יְלָדִים"
+    }
+  },
+  "יַלְדָּה": {
+    "traits": ["human"],
+    "constructOf": ["human", "time", "place"],
+    "gender": "f",
+    "singular": {
+      "translation": "girl",
+      "indef": "יַלְדָּה"
+    },
+    "plural": {
+      "translation": "girls",
+      "indef": "יְלָדוֹת"
+    }
+  },
+  "כֶּלֶב": {
+    "traits": ["predator"],
+    "constructOf": ["human", "time", "place"],
+    "gender": "m",
+    "singular": {
+      "translation": "dog",
+      "indef": "כֶּלֶב"
+    },
+    "plural": {
+      "translation": "dogs",
+      "indef": "כְּלָבִים"
+    }
+  },
+  "חָתוּל": {
+    "traits": ["predator"],
+    "constructOf": ["human", "time", "place"],
+    "gender": "m",
+    "singular": {
+      "translation": "cat (m)",
+      "indef": "חָתוּל"
+    },
+    "plural": {
+      "translation": "cats (m)",
+      "indef": "חֲתוּלִים"
+    }
+  },
+  "חָתוּלָה": {
+    "traits": ["predator"],
+    "constructOf": ["human", "time", "place"],
+    "gender": "f",
+    "singular": {
+      "translation": "cat (f)",
+      "indef": "חָתוּלָה"
+    },
+    "plural": {
+      "translation": "cats (f)",
+      "indef": "חֲתוּלוֹת"
+    }
+  },
+  "קָפֶה": {
+    "traits": ["drink"],
+    "constructOf": ["human", "object", "place"],
+    "gender": "m",
+    "singular": {
+      "translation": "coffee",
+      "indef": "קָפֶה"
+    }
+  },
+  "מִּיץ": {
+    "traits": ["drink"],
+    "constructOf": ["human", "object", "place"],
+    "gender": "m",
+    "singular": {
+      "translation": "juice",
+      "indef": "מִּיץ"
+    },
+    "plural": {
+      "translation": "juices",
+      "indef": "מִיצִים"
+    }
+  },
+  "סֵפֶר": {
+    "traits": ["holdable"],
+    "constructOf": ["physical", "nonphysical"],
+    "gender": "m",
+    "singular": {
+      "translation": "book",
+      "indef": "סֵפֶר"
+    },
+    "plural": {
+      "translation": "books",
+      "indef": "סְפָרִים"
+    }
+  },
+  "מְכוֹנִּית": {
+    "traits": ["vehicle"],
+    "constructOf": ["human", "time", "place"],
+    "gender": "f",
+    "singular": {
+      "translation": "car",
+      "indef": "מְכוֹנִּית"
+    },
+    "plural": {
+      "translation": "cars",
+      "indef": "מְכוֹנִּיוֹת"
+    }
+  },
+  "תַּפּוּחַ": {
+    "traits": ["food", "nomeat"],
+    "constructOf": ["physical"], 
+    "gender": "m",
+    "singular": {
+      "translation": "apple",
+      "indef": "תַּפּוּחַ"
+    },
+    "plural": {
+      "translation": "apples",
+      "indef": "תַּפּוּחִים"
+    }
+  },
+  "בַּיִת": {
+    "traits": ["building"],
+    "constructOf": ["human", "time", "place"],
+    "gender": "m",
+    "singular": {
+      "translation": "house",
+      "indef": "בַּיִת"
+    },
+    "plural": {
+      "translation": "houses",
+      "indef": "בָּתִּים"
+    }
+  },
+  "חָבֵר": {
+    "traits": ["human"],
+    "constructOf": ["human"],
+    "gender": "m",
+    "singular": {
+      "translation": "friend (m)",
+      "indef": "חָבֵר"
+    },
+    "plural": {
+      "translation": "friends (m)",
+      "indef": "חֲבֵרִים"
+    }
+  },
+  "חֲבֵרָה": {
+    "traits": ["human"],
+    "constructOf": ["human"],
+    "gender": "f",
+    "singular": {
+      "translation": "friend (f)",
+      "indef": "חֲבֵרָה"
+    },
+    "plural": {
+      "translation": "friends (f)",
+      "indef": "חֲבֵרוֹת"
+    }
+  },
+  "אִישׁ": {
+    "traits": ["human"],
+    "constructOf": ["human", "place", "time"],
+    "gender": "m",
+    "singular": {
+      "translation": "man",
+      "indef": "אִישׁ"
+    },
+    "plural": {
+      "translation": "men",
+      "indef": "אֲנָשִׁים"
+    }
+  },
+  "אִשָּׁה": {
+    "traits": ["human"],
+    "constructOf": ["human", "place", "time"],
+    "gender": "f",
+    "singular": {
+      "translation": "woman",
+      "indef": "אִשָּׁה"
+    },
+    "plural": {
+      "translation": "women",
+      "indef": "נָשִׁים"
+    }
+  },
+  "סוּס": {
+    "traits": ["animal"],
+    "constructOf": ["human", "place", "time"],
+    "gender": "m",
+    "singular": {
+      "translation": "horse",
+      "indef": "סוּס"
+    },
+    "plural": {
+      "translation": "horses",
+      "indef": "סוּסִים"
+    }
+  },
+  "חָלָב": {
+    "traits": ["drink"],
+    "constructOf": ["human", "place", "time", "object"],
+    "gender": "m",
+    "singular": {
+      "translation": "milk",
+      "indef": "חָלָב"
+    }
+  },
+  "לֶחֶם": {
+    "traits": ["food", "nomeat"],
+    "constructOf": ["human", "place", "time", "object"],
+    "gender": "m",
+    "singular": {
+      "translation": "bread",
+      "indef": "לֶחֶם"
+    }
+  },
+  "שֻׁלְחָן": {
+    "traits": ["furniture"],
+    "constructOf": ["human", "place", "time"],
+    "gender": "m",
+    "singular": {
+      "translation": "table",
+      "indef": "שֻׁלְחָן"
+    },
+    "plural": {
+      "translation": "tables",
+      "indef": "שֻׁלְחָנוֹת"
+    }
+  },
+  "כִּסֵּא": {
+    "traits": ["furniture"],
+    "constructOf": ["human", "place", "time"],
+    "gender": "m",
+    "singular": {
+      "translation": "chair",
+      "indef": "כִּסֵּא"
+    },
+    "plural": {
+      "translation": "chairs",
+      "indef": "כִּסְאוֹת"
+    }
+  },
+  "מִכְתָּב": {
+    "traits": ["holdable"],
+    "constructOf": ["physical", "nonphysical"],
+    "gender": "m",
+    "singular": {
+      "translation": "letter (document)",
+      "indef": "מִכְתָּב"
+    },
+    "plural": {
+      "translation": "letters (document)",
+      "indef": "מִכְתָּבִים"
+    }
+  },
+  "הַחְלָטָה": {
+  "traits": ["concept"],
+  "constructOf": ["human", "time", "event"],
+  "gender": "f",
+  "singular": {
+    "translation": "decision",
+    "indef": "הַחְלָטָה"
+  },
+  "plural": {
+    "translation": "decisions",
+    "indef": "הַחְלָטוֹת"
+  }
+}
+}
