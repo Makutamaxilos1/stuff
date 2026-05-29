@@ -1,0 +1,46 @@
+{
+  "חַם": {
+    "applies_to": ["physical"],
+    "singular": {
+      "m": { "translation": "hot", "indef": "חַם" },
+      "f": { "translation": "hot", "indef": "חַמָּה" }
+    },
+    "plural": {
+      "m": { "translation": "hot", "indef": "חַמִּים" },
+      "f": { "translation": "hot", "indef": "חַמּוֹת" }
+    }
+  },
+  "טָעִים": {
+    "applies_to": ["food"],
+    "singular": {
+      "m": { "translation": "delicious", "indef": "טָעִים" },
+      "f": { "translation": "delicious", "indef": "טְעִימָה" }
+    },
+    "plural": {
+      "m": { "translation": "delicious", "indef": "טְעִימִים" },
+      "f": { "translation": "delicious", "indef": "טְעִימוֹת" }
+    }
+  },
+  "עַתִּיק": {
+    "applies_to": [],
+    "singular": {
+      "m": { "translation": "ancient", "indef": "עַתִּיק" },
+      "f": { "translation": "ancient", "indef": "עַתִּיקָה" }
+    },
+    "plural": {
+      "m": { "translation": "ancient", "indef": "עַתִּיקִים" },
+      "f": { "translation": "ancient", "indef": "עַתִּיקוֹת" }
+    }
+  },
+  "גָדוֹל": {
+    "applies_to": ["physical", "spiritual"],
+    "singular": {
+      "m": { "translation": "big", "indef": "גָדוֹל" },
+      "f": { "translation": "big", "indef": "גְּדוֹלָה" }
+    },
+    "plural": {
+      "m": { "translation": "big", "indef": "גְּדוֹלִים" },
+      "f": { "translation": "big", "indef": "גְּדוֹלוֹת" }
+    }
+  }
+}
